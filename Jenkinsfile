@@ -18,14 +18,14 @@ pipeline {
         }
         stage('docker build') {
             steps{
-                sh 'docker build -t andxroid16:spring-app:${BUILD_NUMBER}'
+                sh 'docker build -t andxroid16/spring-app:${BUILD_NUMBER}'
             }
         }
         stage('docker push') {
             steps {
                 withCredentials([string(credentialsId: 'docker_token', variable: 'docker_pac')]) {
                     sh 'echo ${docker_pac} | docker login -u andxroid16 --password-stdin'
-                    sh 'docker push andxroid16:spring-app:${BUILD_NUMBER}'
+                    sh 'docker push andxroid16/spring-app:${BUILD_NUMBER}'
                 }
             }
         }
