@@ -20,8 +20,8 @@ spec:
           volumeMounts:
             - name: mongo-storage
               mountPath: /data/db
-          volumes:
-            - name: mongo-storage
+      volumes:
+        - name: mongo-storage
           emptyDir: {}
 ---
 apiVersion: v1
