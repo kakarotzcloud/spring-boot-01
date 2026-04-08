@@ -1,6 +1,5 @@
 .git
 src
-target
 Dockerfile
 Jenkinsfile
 *.yaml
