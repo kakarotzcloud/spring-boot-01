@@ -4,13 +4,14 @@ metadata:
   name: springboot-app
   namespace: default
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: springboot
   template:
-    metadata: labels:qqqq
-      app:springboot
+    metadata:
+      labels:
+        app: springboot
     spec:
       containers:
         - name: springboot
