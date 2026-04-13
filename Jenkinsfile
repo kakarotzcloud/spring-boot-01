@@ -34,7 +34,7 @@
 
 
 node{
-    stage('Git Checkout 1') {
+    stage('Git Checkout') {
         git branch: 'main', changelog: false, credentialsId: 'github_creds', poll: false, url: 'https://github.com/kakarotzcloud/spring-boot-01.git'
     }
 }
