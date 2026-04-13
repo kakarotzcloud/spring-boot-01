@@ -4,7 +4,7 @@ pipeline {
         maven 'maven_3.9.11' 
     }
     stages {
-        stage('Git Checkoutc') {
+        stage('Git Checkout') {
             steps {
                 git branch: 'main',
                     credentialsId: 'github_creds',
