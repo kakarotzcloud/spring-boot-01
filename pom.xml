@@ -12,6 +12,7 @@
         <version>2.7.18</version> <!-- Stable version -->
         <relativePath/>
     </parent>
+    <!-- Spring Boot Parent -->
 
     <!-- Project Details -->
     <groupId>com.example</groupId>
