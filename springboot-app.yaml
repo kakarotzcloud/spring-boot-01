@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   name: springboot-app
   namespace: default
-  use: web-app
 spec:
   replicas: 1
   selector:
